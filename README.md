@@ -47,7 +47,7 @@ The Salesforce debug log is automatically downloaded and assumes the following
 
 If you were to run the commands for Apex replay debugging by hand the debug log is downloaded by opening Visual Studio Code command palette and selecting **SFDX: Get Apex Debug Logs**, the command will then query Salesforce for all available logs and allow the developer to pick the correct log. This extension sits on top of the existing Salesforce extension and therefore can also prompt the developer for a debug log as it can leverage the same command!
 
-In order to change the logic from automatically downloading the debug log to displaying a prompt go to [debugUnitTests.ts](src/commands/debugUnitTests.ts) and change it from
+In order to change the logic from automatically downloading the debug log to displaying a prompt go to [debugUnitTest.ts](src/commands/debugUnitTest.ts) and change it from
 ```typescript
   // The command below will prompt for a log file ... default behavior
   //    await vscode.commands.executeCommand('sfdx.force.apex.log.get');
